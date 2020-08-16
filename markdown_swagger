@@ -1,0 +1,4 @@
+#!/bin/bash
+# https://github.com/rmariuzzo/markdown-swagger
+npm install markdown-swagger
+markdown-swagger ./api/swagger/swagger.yaml ./README.md
