@@ -1,0 +1,14 @@
+#!/bin/false
+pandoc -s -f markdown-smart -t man $f.1.md -o $f.1
+sudo mv $f.1 /usr/share/man/man1
+
+
+for file in $PWD/*.md
+do
+  name=${file##*/}
+  base=${name%.md}
+      
+      pandoc -s -f markdown-smart -t man "$file" man/"${base}.1"
+done
+
+for f in *.md;  do pandoc -s -f markdown-smart -t man ${f}; done;
