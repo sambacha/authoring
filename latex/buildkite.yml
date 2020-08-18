@@ -1,0 +1,4 @@
+steps:
+  - command: "ci/build.sh"
+    label: "build [public]"
+    timeout_in_minutes: 10
