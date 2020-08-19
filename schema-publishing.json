@@ -1,0 +1,272 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "branch": {
+      "type": "string"
+    },
+    "files": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "formats": {
+      "type": "object",
+      "properties": {
+        "pdf": {
+          "type": "object",
+          "properties": {
+            "version": {
+              "type": "string"
+            },
+            "toc": {
+              "type": "boolean"
+            },
+            "index": {
+              "type": "boolean"
+            },
+            "syntaxhighlighting": {
+              "type": "boolean"
+            },
+            "show_comments": {
+              "type": "boolean"
+            },
+            "antennahouse_version": {
+              "type": "string"
+            },
+            "color_count": {
+              "type": "string"
+            },
+            "trim_size": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "version",
+            "toc",
+            "index",
+            "syntaxhighlighting",
+            "show_comments",
+            "antennahouse_version",
+            "color_count",
+            "trim_size"
+          ]
+        },
+        "epub": {
+          "type": "object",
+          "properties": {
+            "toc": {
+              "type": "boolean"
+            },
+            "index": {
+              "type": "boolean"
+            },
+            "syntaxhighlighting": {
+              "type": "boolean"
+            },
+            "epubcheck": {
+              "type": "boolean"
+            },
+            "show_comments": {
+              "type": "boolean"
+            },
+            "downsample_images": {
+              "type": "boolean"
+            },
+            "mathmlreplacement": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "toc",
+            "index",
+            "syntaxhighlighting",
+            "epubcheck",
+            "show_comments",
+            "downsample_images",
+            "mathmlreplacement"
+          ]
+        },
+        "mobi": {
+          "type": "object",
+          "properties": {
+            "toc": {
+              "type": "boolean"
+            },
+            "index": {
+              "type": "boolean"
+            },
+            "syntaxhighlighting": {
+              "type": "boolean"
+            },
+            "show_comments": {
+              "type": "boolean"
+            },
+            "downsample_images": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "toc",
+            "index",
+            "syntaxhighlighting",
+            "show_comments",
+            "downsample_images"
+          ]
+        },
+        "html": {
+          "type": "object",
+          "properties": {
+            "toc": {
+              "type": "boolean"
+            },
+            "index": {
+              "type": "boolean"
+            },
+            "syntaxhighlighting": {
+              "type": "boolean"
+            },
+            "show_comments": {
+              "type": "boolean"
+            },
+            "consolidated": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "toc",
+            "index",
+            "syntaxhighlighting",
+            "show_comments",
+            "consolidated"
+          ]
+        }
+      },
+      "required": [
+        "pdf",
+        "epub",
+        "mobi",
+        "html"
+      ]
+    },
+    "theme": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "templating": {
+      "type": "boolean"
+    },
+    "print_isbn13": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "accent_color": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "branch",
+    "files",
+    "formats",
+    "theme",
+    "title",
+    "templating",
+    "print_isbn13",
+    "lang",
+    "accent_color"
+  ]
+}
