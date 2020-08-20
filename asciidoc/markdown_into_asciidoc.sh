@@ -11,6 +11,6 @@ pandoc --atx-headers \
     --wrap=none \
     --toc \
     --reference-links \
-    -s -S -o -t asciidoc $PWD/$filename.adoc \
+    -smart -o -t asciidoc $PWD/$filename.adoc \
     $PWD/$f
 done
