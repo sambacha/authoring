@@ -1,0 +1,1 @@
+pandoc --standalone --from gfm --to asciidoctor
