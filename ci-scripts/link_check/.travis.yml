@@ -1,0 +1,31 @@
+---
+
+dist: xenial
+
+language: minimal
+
+services:
+  - docker
+
+
+stages:
+  - Test
+
+jobs:
+  fast_finish: true
+  allow_failures:
+    - env:
+        - TEST=mardown_lint
+
+  include:
+    - stage: Test
+      name: Markdown link check
+      env:
+        - TEST=mardown_lint
+      language: node_js
+      node_js:
+        - lts/*
+      install:
+        - npm i -g markdown-link-check
+      script:
+        - find . -name "*.md,*.mdx" | xargs -n 1 markdown-link-check
