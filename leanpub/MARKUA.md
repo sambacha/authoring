@@ -1,6 +1,6 @@
 # Chapter One
 
-This is *italic* and **bold**.
+This is _italic_ and **bold**.
 
 Here's an image:
 
@@ -11,24 +11,19 @@ Here's an image:
 
 You can have bulleted and numbered lists, including nested lists:
 
-1. foo
-   a) lorem
-   b) ipsum
+1. foo a) lorem b) ipsum
 2. bar
-   * stuff
-   * more stuff
+   - stuff
+   - more stuff
 3. baz
 
 ### A Sub-Section
 
 You can even have definition lists!
 
-term 1
-: definition 1a
-: definition 1b
+term 1 : definition 1a : definition 1b
 
-term 2
-: definition 2
+term 2 : definition 2
 
 ## Another Section
 
@@ -46,13 +41,13 @@ You can have external code samples:
 You can also inline code samples:
 
 {caption: "Hello World in Ruby"}
+
 ```ruby
 puts "hello"
 ```
 
 You can also include single lines of code like `puts "hello"` in paragraphs.
 
-> Blockquotes are really easy too.
-> --Peter Armstrong, *Markua Spec*
+> Blockquotes are really easy too. --Peter Armstrong, _Markua Spec_
 
-Finally, you can do that with math `d = v_i t + \frac{1}{2} a t^2`$ too.
+Finally, you can do that with math `d = v_i t + \frac{1}{2} a t^2`\$ too.

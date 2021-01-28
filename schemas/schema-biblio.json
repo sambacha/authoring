@@ -18,10 +18,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "family",
-                "given"
-              ]
+              "required": ["family", "given"]
             }
           ]
         },
@@ -45,9 +42,7 @@
               ]
             }
           },
-          "required": [
-            "date-parts"
-          ]
+          "required": ["date-parts"]
         },
         "publisher": {
           "type": "string"
@@ -88,10 +83,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "family",
-                "given"
-              ]
+              "required": ["family", "given"]
             }
           ]
         },
@@ -118,9 +110,7 @@
               ]
             }
           },
-          "required": [
-            "date-parts"
-          ]
+          "required": ["date-parts"]
         },
         "page": {
           "type": "string"
@@ -162,10 +152,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "family",
-                "given"
-              ]
+              "required": ["family", "given"]
             },
             {
               "type": "object",
@@ -177,10 +164,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "family",
-                "given"
-              ]
+              "required": ["family", "given"]
             }
           ]
         },
@@ -200,10 +184,7 @@
                   "type": "string"
                 }
               },
-              "required": [
-                "family",
-                "given"
-              ]
+              "required": ["family", "given"]
             }
           ]
         },
@@ -227,9 +208,7 @@
               ]
             }
           },
-          "required": [
-            "date-parts"
-          ]
+          "required": ["date-parts"]
         },
         "publisher": {
           "type": "string"

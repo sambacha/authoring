@@ -59,7 +59,9 @@ Markua supports both of Markdown's heading styles.
 The preferred style, called atx headers, has the following meaning in Markua:
 
 ```
+
 {class: part}
+
 # Part
 
 This is a paragraph.
@@ -87,6 +89,7 @@ This is a paragraph.
 ###### Sub-sub-sub-sub-section
 
 This is a paragraph.
+
 ```
 
 Note the use of three backticks in the above example, to treat the Markua like
@@ -95,21 +98,19 @@ inline code.
 The other style of headers, called Setext headers, has the following headings:
 
 ```
-{class: part}
-Part
-====
+
+{class: part} Part ====
 
 This is a paragraph.
 
-Chapter
-=======
+# Chapter
 
 This is a paragraph.
 
-Section
--------
+## Section
 
 This is a paragraph.
+
 ```
 
 Setext headers look nice, but only if you're only using chapters and sections.
@@ -157,16 +158,16 @@ affect the behaviour of the Markua Processor. For example, you can set the
 caption instead of as alt text:
 
 ```
-{
-alt-caption: all
-}
+
+{ alt-caption: all }
 
 # Chapter One
 
 This is an apple with a figure caption but no alt text:
 
 ![The Original McIntosh, a red apple](mac.jpg)
-```
+
+````
 
 This gets you the terseness of inserting images as figures in LFM, in a general
 way. Note that if the `alt-caption` global setting is set to `text` (the
@@ -202,19 +203,21 @@ attribute list:
 {caption: "Hello World in Ruby"}
 ```ruby
 puts "hello"
-```
+````
 
 You can also include single lines of code like `puts "hello"` in paragraphs
 using backticks.
 
 # Other Stuff
 
-Note that you can easily add math `d = v_i t + \frac{1}{2} a t^2`$ as well,
+Note that you can easily add math `d = v_i t + \frac{1}{2} a t^2`\$ as well,
 either inline in a paragraph or as a figure, using LaTeX math as the format.
 
-> Blockquotes are really easy too.
-> --Peter Armstrong, *Markua Spec*
+> Blockquotes are really easy too. --Peter Armstrong, _Markua Spec_
 
 Markua has lots of features not discussed in this example. Read the manual or
 the rest of the spec!
+
+```
+
 ```

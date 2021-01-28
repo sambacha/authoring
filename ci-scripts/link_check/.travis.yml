@@ -1,12 +1,10 @@
 ---
-
 dist: xenial
 
 language: minimal
 
 services:
   - docker
-
 
 stages:
   - Test
