@@ -1,1 +1,20 @@
 node_modules
+.DS_Store
+vendor/
+.vendor/
+
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+.bundle/
+.byebug_history
+.ruby-gemset
+.ruby-version
+
+# Files
+.analysis
+.DS_Store
+*.swp
+*~

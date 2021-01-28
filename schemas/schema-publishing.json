@@ -232,12 +232,7 @@
           ]
         }
       },
-      "required": [
-        "pdf",
-        "epub",
-        "mobi",
-        "html"
-      ]
+      "required": ["pdf", "epub", "mobi", "html"]
     },
     "theme": {
       "type": "string"
