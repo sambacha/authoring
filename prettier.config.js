@@ -6,6 +6,7 @@ module.exports = {
   bracketSpacing: true,
   endOfLine: 'lf',
   printWidth: 100,
+  proseWrap: 'never',
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'all',
@@ -16,7 +17,8 @@ module.exports = {
       files: '*.md',
       options: {
         parser: 'markdown',
-        printWidth: 72,
+        printWidth: 120,
+        proseWrap: 'never',
         tabWidth: 4,
         useTabs: true,
         singleQuote: false,
